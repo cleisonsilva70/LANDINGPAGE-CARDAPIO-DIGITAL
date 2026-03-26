@@ -243,18 +243,6 @@ export default function Home() {
               o cliente final.
             </strong>
           </article>
-
-          <article className="feature-panel post-solution-visual">
-            <div className="post-solution-image-shell">
-              <Image
-                src="/screenshots/cardapio.png"
-                alt="Cardapio digital organizado e pronto para vender"
-                width={1200}
-                height={900}
-                className="feature-image"
-              />
-            </div>
-          </article>
         </div>
       </section>
 
