@@ -501,6 +501,7 @@ a {
   background: rgba(255, 255, 255, 0.04);
   padding: 12px;
   overflow: hidden;
+  scroll-snap-align: start;
 }
 
 .showcase-screen-mobile {
@@ -895,12 +896,30 @@ a {
   }
 
   .showcase-screen-pair {
-    grid-template-columns: 1fr;
+    display: flex;
+    grid-template-columns: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 6px;
   }
 
   .showcase-screen-mobile {
-    max-width: 100%;
+    max-width: none;
     justify-self: stretch;
+  }
+
+  .showcase-screen-pair .showcase-screen {
+    min-width: 86%;
+    flex: 0 0 86%;
+  }
+
+  .showcase-screen-pair::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .showcase-screen-pair::-webkit-scrollbar-thumb {
+    background: rgba(243, 179, 25, 0.3);
+    border-radius: 999px;
   }
 
   .post-solution-shell {
