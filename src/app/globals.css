@@ -66,7 +66,7 @@ a {
 }
 
 .hero-section {
-  padding: 20px 0 8px;
+  padding: 12px 0 6px;
 }
 
 .hero-card,
@@ -86,11 +86,11 @@ a {
     radial-gradient(circle at 12% 10%, rgba(243, 179, 25, 0.2), transparent 18%),
     radial-gradient(circle at 90% 14%, rgba(243, 179, 25, 0.12), transparent 20%),
     linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
-  padding: 28px;
+  padding: 24px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
   align-items: center;
-  gap: 36px;
+  gap: 28px;
 }
 
 .hero-copy,
@@ -150,9 +150,9 @@ a {
 }
 
 .hero-title {
-  margin: 18px 0 0;
+  margin: 14px 0 0;
   max-width: 760px;
-  font-size: clamp(2.35rem, 4.8vw, 4.9rem);
+  font-size: clamp(2rem, 4.1vw, 4.2rem);
   line-height: 0.92;
 }
 
@@ -167,8 +167,8 @@ a {
 
 .hero-text {
   max-width: 650px;
-  margin-top: 18px;
-  font-size: 1.05rem;
+  margin-top: 14px;
+  font-size: 1rem;
   color: var(--muted);
 }
 
@@ -177,7 +177,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 28px;
+  margin-top: 22px;
 }
 
 .cta-button {
@@ -220,7 +220,7 @@ a {
 
 .hero-visual {
   position: relative;
-  min-height: 440px;
+  min-height: 400px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -228,7 +228,7 @@ a {
 }
 
 .hero-carousel-desktop {
-  width: min(100%, 410px);
+  width: min(100%, 380px);
   overflow: hidden;
 }
 
