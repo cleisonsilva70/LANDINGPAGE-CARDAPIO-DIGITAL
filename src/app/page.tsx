@@ -7,24 +7,6 @@ export default function Home() {
   );
   const whatsappHref = `https://wa.me/${salesWhatsapp}?text=${whatsappMessage}`;
 
-  const features = [
-    {
-      tag: "Operacao",
-      title: "Atendimento mais organizado",
-      text: "O pedido chega mais claro, o pagamento e validado e a equipe atende sem confusao.",
-    },
-    {
-      tag: "Equipe",
-      title: "Cozinha focada no preparo",
-      text: "A cozinha enxerga apenas os pedidos liberados e trabalha com mais ritmo e menos erro.",
-    },
-    {
-      tag: "Marca",
-      title: "Sua marca com mais presenca",
-      text: "Logo, cores, banners e categorias para passar mais profissionalismo no delivery.",
-    },
-  ];
-
   const timeline = [
     "Cliente escolhe os produtos",
     "Pedido vai para o WhatsApp",
@@ -247,14 +229,32 @@ export default function Home() {
       </section>
 
       <section className="container-shell section-spacing">
-        <div className="feature-grid">
-          {features.slice(2).map((feature) => (
-            <article key={feature.title} className="feature-panel">
-              <span className="panel-tag">{feature.tag}</span>
-              <h3>{feature.title}</h3>
-              <p>{feature.text}</p>
-            </article>
-          ))}
+        <div className="feature-grid post-solution-shell">
+          <article className="feature-panel post-solution-copy">
+            <span className="panel-tag">Depois da solucao</span>
+            <h3>sua operacao passa a atender com mais clareza e muito mais confianca</h3>
+            <p>
+              Depois que o cardapio entra no ar, o cliente entende melhor o que pedir,
+              o atendimento recebe tudo mais organizado e a equipe trabalha com menos
+              retrabalho no dia a dia.
+            </p>
+            <strong className="feature-highlight-copy">
+              voce ganha mais agilidade para vender e uma imagem mais profissional para
+              o cliente final.
+            </strong>
+          </article>
+
+          <article className="feature-panel post-solution-visual">
+            <div className="post-solution-image-shell">
+              <Image
+                src="/screenshots/cardapio.png"
+                alt="Cardapio digital organizado e pronto para vender"
+                width={1200}
+                height={900}
+                className="feature-image"
+              />
+            </div>
+          </article>
         </div>
       </section>
 

@@ -467,6 +467,28 @@ a {
   box-shadow: var(--shadow-dark);
 }
 
+.post-solution-shell {
+  grid-template-columns: 0.95fr 1.05fr;
+}
+
+.post-solution-copy {
+  justify-content: center;
+}
+
+.post-solution-visual {
+  display: flex;
+  align-items: center;
+}
+
+.post-solution-image-shell {
+  width: 100%;
+  border-radius: 28px;
+  border: 1px solid rgba(243, 179, 25, 0.14);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 12px;
+  box-shadow: var(--shadow-dark);
+}
+
 .feature-panel-highlight {
   display: flex;
   flex-direction: column;
@@ -715,6 +737,10 @@ a {
   .pricing-grid,
   .timeline-grid,
   .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-solution-shell {
     grid-template-columns: 1fr;
   }
 
