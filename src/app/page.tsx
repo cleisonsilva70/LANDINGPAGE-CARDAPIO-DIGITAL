@@ -361,11 +361,12 @@ export default function Home() {
           <div className="pricing-intro">
             <p className="section-tag">Oferta comercial</p>
             <h2 className="section-title">
-              uma proposta simples para fechar mais facil com pequenos negocios
+              um valor acessivel para profissionalizar seu delivery e vender com mais organizacao
             </h2>
             <p className="section-copy">
-              O cliente entende rapido: paga para implantar uma vez e depois mantem o
-              sistema online com uma mensalidade acessivel.
+              Em vez de depender de pedido baguncado no WhatsApp e passar uma imagem
+              amadora para o cliente, voce investe uma vez para implantar e depois
+              mantem seu sistema rodando por uma mensalidade leve para o dia a dia.
             </p>
           </div>
 
@@ -375,17 +376,17 @@ export default function Home() {
               <h3>R$ 200</h3>
               <div className="price-chip">valor de entrada</div>
               <p>
-                Implantacao inicial com visual da marca, produtos, categorias, banners
-                e link publicado.
+                Voce paga uma vez para receber seu cardapio digital pronto, com a cara
+                da sua marca, organizado para vender melhor e ja preparado para divulgar.
               </p>
               <ul>
-                <li>Visual personalizado</li>
-                <li>Cadastro inicial do cardapio</li>
-                <li>Configuracao do WhatsApp</li>
-                <li>Entrega pronta para uso</li>
+                <li>visual personalizado com a sua marca</li>
+                <li>cadastro inicial do cardapio</li>
+                <li>configuracao do WhatsApp de pedidos</li>
+                <li>entrega pronta para comecar a usar</li>
               </ul>
               <div className="pricing-note">
-                implantacao em poucos dias, pronta para divulgar e comecar a vender
+                um investimento unico para sair da improvisacao e entrar com mais profissionalismo
               </div>
             </article>
 
@@ -394,17 +395,17 @@ export default function Home() {
               <h3>R$ 59,90</h3>
               <div className="price-chip price-chip-dark">recorrencia mensal</div>
               <p>
-                Sistema online todos os meses com manutencao, suporte basico e
-                funcionamento continuo para o cliente seguir vendendo.
+                Por um valor baixo no mes, voce mantem o sistema online, com atendimento,
+                cozinha e estrutura funcionando para continuar vendendo sem depender de gambiarra.
               </p>
               <ul>
-                <li>Hospedagem do sistema</li>
-                <li>Suporte basico</li>
-                <li>Pequenos ajustes</li>
-                <li>Atendimento e cozinha ativos</li>
+                <li>hospedagem do sistema</li>
+                <li>suporte basico</li>
+                <li>pequenos ajustes</li>
+                <li>atendimento e cozinha ativos</li>
               </ul>
               <div className="pricing-note pricing-note-dark">
-                mensalidade simples para manter o sistema no ar e a operacao rodando
+                menos que o valor de um lanche por dia para manter sua operacao mais organizada
               </div>
             </article>
           </div>
