@@ -231,17 +231,30 @@ export default function Home() {
       <section className="container-shell section-spacing">
         <div className="feature-grid post-solution-shell">
           <article className="feature-panel post-solution-copy">
-            <span className="panel-tag">Depois da solucao</span>
-            <h3>sua operacao passa a atender com mais clareza e muito mais confianca</h3>
-            <p>
-              Depois que o cardapio entra no ar, o cliente entende melhor o que pedir,
-              o atendimento recebe tudo mais organizado e a equipe trabalha com menos
-              retrabalho no dia a dia.
-            </p>
-            <strong className="feature-highlight-copy">
-              voce ganha mais agilidade para vender e uma imagem mais profissional para
-              o cliente final.
-            </strong>
+            <div className="post-solution-copy-inner">
+              <span className="panel-tag">Depois da solucao</span>
+              <h3>sua operacao fica mais organizada, mais profissional e muito mais facil de vender</h3>
+              <p>
+                Depois da implantacao, o cliente entende melhor o cardapio, o atendimento
+                ganha mais clareza para trabalhar e a equipe para de perder tempo com
+                pedido confuso no WhatsApp.
+              </p>
+              <strong className="feature-highlight-copy">
+                voce melhora a rotina da operacao e passa mais confianca para o cliente final.
+              </strong>
+            </div>
+          </article>
+
+          <article className="feature-panel post-solution-visual">
+            <div className="post-solution-image-shell">
+              <Image
+                src="/screenshots/atendenteorganizacao.png"
+                alt="Atendimento mais organizado depois da implantacao"
+                width={1200}
+                height={900}
+                className="problem-image"
+              />
+            </div>
           </article>
         </div>
       </section>

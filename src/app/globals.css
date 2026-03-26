@@ -468,11 +468,31 @@ a {
 }
 
 .post-solution-shell {
-  grid-template-columns: 1fr;
+  grid-template-columns: 1.1fr 0.9fr;
 }
 
 .post-solution-copy {
-  justify-content: center;
+  display: grid;
+  align-content: start;
+}
+
+.post-solution-copy-inner {
+  display: grid;
+  gap: 18px;
+}
+
+.post-solution-visual {
+  display: grid;
+  align-content: start;
+}
+
+.post-solution-image-shell {
+  max-width: 420px;
+  border-radius: 28px;
+  border: 1px solid rgba(243, 179, 25, 0.14);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 10px;
+  box-shadow: var(--shadow-dark);
 }
 
 .feature-panel-highlight {
@@ -728,6 +748,10 @@ a {
 
   .post-solution-shell {
     grid-template-columns: 1fr;
+  }
+
+  .post-solution-image-shell {
+    max-width: 100%;
   }
 
   .hero-card,
