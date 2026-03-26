@@ -88,9 +88,9 @@ a {
     linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
   padding: 28px;
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.85fr);
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
   align-items: center;
-  gap: 44px;
+  gap: 36px;
 }
 
 .hero-copy,
@@ -220,15 +220,15 @@ a {
 
 .hero-visual {
   position: relative;
-  min-height: 540px;
+  min-height: 440px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-left: 12px;
+  padding-left: 8px;
 }
 
 .hero-carousel-desktop {
-  width: min(100%, 500px);
+  width: min(100%, 410px);
   overflow: hidden;
 }
 
@@ -250,7 +250,7 @@ a {
   position: relative;
   flex: 0 0 33.3333%;
   overflow: hidden;
-  border-radius: 28px;
+  border-radius: 24px;
   border: 1px solid rgba(243, 179, 25, 0.14);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
   box-shadow: var(--shadow-dark);
@@ -668,10 +668,11 @@ a {
   .hero-visual {
     min-height: auto;
     padding-left: 0;
+    justify-content: center;
   }
 
   .hero-carousel-desktop {
-    width: 100%;
+    width: min(100%, 430px);
   }
 }
 
