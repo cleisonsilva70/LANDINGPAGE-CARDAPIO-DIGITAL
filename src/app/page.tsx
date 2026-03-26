@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function Home() {
-  const salesWhatsapp = "5584999999999";
+  const salesWhatsapp = "5584987330515";
   const whatsappDemoMessage = encodeURIComponent(
     "Oi! Quero ver como esse cardapio digital pode funcionar no meu delivery.",
   );
@@ -86,6 +86,12 @@ export default function Home() {
     "pedido mais organizado do cliente ate a cozinha",
   ];
 
+  const proofItems = [
+    "feito para hamburguerias, lanchonetes e restaurantes delivery",
+    "implantacao com visual da sua marca e link pronto para divulgar",
+    "atendimento e cozinha organizados para evitar confusao no pedido",
+  ];
+
   return (
     <main className="landing-page pb-20">
       <section className="hero-section">
@@ -165,6 +171,16 @@ export default function Home() {
           {trustPoints.map((point) => (
             <div key={point} className="trust-chip">
               {point}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="container-shell section-spacing">
+        <div className="proof-bar">
+          {proofItems.map((item) => (
+            <div key={item} className="proof-bar-item">
+              {item}
             </div>
           ))}
         </div>
@@ -394,6 +410,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <a href={whatsappDemoHref} target="_blank" rel="noreferrer" className="floating-mobile-cta">
+        Falar no WhatsApp
+      </a>
     </main>
   );
 }

@@ -99,6 +99,24 @@ a {
   box-shadow: var(--shadow-dark);
 }
 
+.proof-bar {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.proof-bar-item {
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+  padding: 18px 20px;
+  color: var(--foreground);
+  font-size: 0.88rem;
+  font-weight: 800;
+  line-height: 1.7;
+  box-shadow: var(--shadow-dark);
+}
+
 .hero-card {
   position: relative;
   overflow: hidden;
@@ -755,6 +773,26 @@ a {
   margin-top: 22px;
 }
 
+.floating-mobile-cta {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 30;
+  display: none;
+  min-height: 54px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0 22px;
+  background: linear-gradient(135deg, #f3b319, #d79809);
+  color: #19130a;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  box-shadow: 0 18px 34px rgba(243, 179, 25, 0.28);
+}
+
 @media (max-width: 1100px) {
   .hero-card,
   .problem-strip,
@@ -786,7 +824,8 @@ a {
   .pricing-grid,
   .timeline-grid,
   .showcase-grid,
-  .trust-strip {
+  .trust-strip,
+  .proof-bar {
     grid-template-columns: 1fr;
   }
 
@@ -819,6 +858,10 @@ a {
 
   .hero-image-stage {
     flex: initial;
+  }
+
+  .floating-mobile-cta {
+    display: inline-flex;
   }
 }
 
