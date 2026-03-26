@@ -184,17 +184,17 @@ export default function Home() {
 
       <section className="container-shell section-spacing">
         <div className="problem-strip">
-          <div>
+          <div className="problem-copy">
             <p className="section-tag">O problema</p>
             <h2 className="section-title">
               muita hamburgueria ainda perde tempo e pedido na desorganizacao
             </h2>
-          </div>
-          <div className="problem-side">
             <p className="section-copy">
               Quando o pedido chega confuso, o atendimento se enrola, a cozinha recebe
               informacao errada e o cliente percebe na hora que a operacao nao esta redonda.
             </p>
+          </div>
+          <div className="problem-side">
             <div className="problem-image-shell">
               <Image
                 src="/screenshots/atendente.png"
