@@ -447,22 +447,22 @@ export default function Home() {
           <div>
             <p className="section-tag">Fechamento</p>
             <h2 className="section-title">
-              quer colocar isso na sua marca e comecar a vender com mais organizacao?
+              se voce quer vender com mais organizacao, essa e a hora de profissionalizar seu delivery
             </h2>
             <p className="section-copy">
-              Se voce quer um cardapio digital bonito, facil de pedir e com operacao
-              organizada entre atendimento e cozinha, agora e a hora de colocar isso
-              para rodar no seu negocio.
+              Seu cliente enxerga mais valor quando encontra um cardapio bonito, facil
+              de pedir e com uma operacao que passa confianca. Enquanto muita gente ainda
+              vende na bagunca, voce pode entregar uma experiencia melhor e fechar mais pedidos.
             </p>
           </div>
           <div className="closing-card">
-            <strong>fale agora e veja como isso fica no seu delivery</strong>
+            <strong>chame agora e veja como isso pode ficar na sua hamburgueria</strong>
             <p>
-              Chame no WhatsApp para receber a demonstracao, tirar duvidas e entender
-              como fica a implantacao para a sua hamburgueria ou restaurante.
+              Fale no WhatsApp para ver a demonstracao, entender a implantacao e descobrir
+              como deixar seu atendimento, sua cozinha e sua vitrine mais profissionais.
             </p>
             <a href={whatsappContractHref} target="_blank" rel="noreferrer" className="cta-button cta-primary cta-full">
-              Quero ver na minha marca
+              Quero ver no meu delivery
             </a>
           </div>
         </div>
