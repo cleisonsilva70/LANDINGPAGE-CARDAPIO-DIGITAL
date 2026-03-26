@@ -2,10 +2,18 @@ import Image from "next/image";
 
 export default function Home() {
   const salesWhatsapp = "5584999999999";
-  const whatsappMessage = encodeURIComponent(
-    "Oi! Quero entender como esse cardapio digital pode funcionar no meu delivery.",
+  const whatsappDemoMessage = encodeURIComponent(
+    "Oi! Quero ver como esse cardapio digital pode funcionar no meu delivery.",
   );
-  const whatsappHref = `https://wa.me/${salesWhatsapp}?text=${whatsappMessage}`;
+  const whatsappContractMessage = encodeURIComponent(
+    "Oi! Quero contratar o cardapio digital para minha hamburgueria.",
+  );
+  const whatsappQuestionsMessage = encodeURIComponent(
+    "Oi! Tenho algumas duvidas sobre a implantacao e a mensalidade do cardapio digital.",
+  );
+  const whatsappDemoHref = `https://wa.me/${salesWhatsapp}?text=${whatsappDemoMessage}`;
+  const whatsappContractHref = `https://wa.me/${salesWhatsapp}?text=${whatsappContractMessage}`;
+  const whatsappQuestionsHref = `https://wa.me/${salesWhatsapp}?text=${whatsappQuestionsMessage}`;
 
   const timeline = [
     "Cliente escolhe os produtos",
@@ -72,6 +80,12 @@ export default function Home() {
     },
   ];
 
+  const trustPoints = [
+    "implantacao rapida para comecar a vender sem enrolacao",
+    "visual com a identidade da sua hamburgueria ou restaurante",
+    "pedido mais organizado do cliente ate a cozinha",
+  ];
+
   return (
     <main className="landing-page pb-20">
       <section className="hero-section">
@@ -88,7 +102,7 @@ export default function Home() {
               </p>
 
               <div className="hero-actions">
-                <a href={whatsappHref} target="_blank" rel="noreferrer" className="cta-button cta-primary">
+                <a href={whatsappDemoHref} target="_blank" rel="noreferrer" className="cta-button cta-primary">
                   Quero ver funcionando
                 </a>
                 <a href="#planos" className="cta-button cta-outline">
@@ -134,25 +148,7 @@ export default function Home() {
                 <div className="hero-image-stage">
                   <Image
                     src="/screenshots/pedido%20(1).jpeg"
-                    alt="Pedido no WhatsApp 1"
-                    width={1400}
-                    height={1100}
-                    className="hero-stage-image"
-                  />
-                </div>
-                <div className="hero-image-stage">
-                  <Image
-                    src="/screenshots/pedido%20(2).jpeg"
-                    alt="Pedido no WhatsApp 2"
-                    width={1400}
-                    height={1100}
-                    className="hero-stage-image"
-                  />
-                </div>
-                <div className="hero-image-stage">
-                  <Image
-                    src="/screenshots/pedido%20(3).jpeg"
-                    alt="Pedido no WhatsApp 3"
+                    alt="Pedido no WhatsApp"
                     width={1400}
                     height={1100}
                     className="hero-stage-image"
@@ -161,6 +157,16 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="container-shell section-spacing">
+        <div className="trust-strip">
+          {trustPoints.map((point) => (
+            <div key={point} className="trust-chip">
+              {point}
+            </div>
+          ))}
         </div>
       </section>
 
@@ -272,7 +278,7 @@ export default function Home() {
               O cliente faz o pedido pelo celular, o atendimento organiza a entrada e
               a cozinha recebe apenas o que realmente ja esta pronto para preparo.
             </p>
-            <a href={whatsappHref} target="_blank" rel="noreferrer" className="cta-button cta-primary">
+            <a href={whatsappDemoHref} target="_blank" rel="noreferrer" className="cta-button cta-primary">
               Quero uma demonstracao
             </a>
           </div>
@@ -336,10 +342,10 @@ export default function Home() {
           </div>
 
           <div className="pricing-actions">
-            <a href={whatsappHref} target="_blank" rel="noreferrer" className="cta-button cta-primary">
+            <a href={whatsappContractHref} target="_blank" rel="noreferrer" className="cta-button cta-primary">
               Quero contratar
             </a>
-            <a href={whatsappHref} target="_blank" rel="noreferrer" className="cta-button cta-outline">
+            <a href={whatsappQuestionsHref} target="_blank" rel="noreferrer" className="cta-button cta-outline">
               Tirar duvidas no WhatsApp
             </a>
           </div>
@@ -368,20 +374,21 @@ export default function Home() {
           <div>
             <p className="section-tag">Fechamento</p>
             <h2 className="section-title">
-              pronto para apresentar uma solucao que deixa o delivery mais profissional?
+              quer deixar seu delivery mais profissional e vender com mais organizacao?
             </h2>
             <p className="section-copy">
-              Use essa pagina para abrir conversa, mostrar valor e levar o cliente
-              direto para o WhatsApp com mais confianca.
+              Se voce quer um cardapio digital bonito, facil de pedir e com operacao
+              organizada entre atendimento e cozinha, agora e a hora de colocar isso
+              para rodar no seu negocio.
             </p>
           </div>
           <div className="closing-card">
-            <strong>chamada comercial pronta</strong>
+            <strong>fale agora e veja como fica na sua marca</strong>
             <p>
-              Clique no botao abaixo e leve o interessado direto para o seu WhatsApp
-              para apresentar a demonstracao.
+              Chame no WhatsApp para receber a demonstracao, tirar duvidas e entender
+              como fica a implantacao para a sua hamburgueria ou restaurante.
             </p>
-            <a href={whatsappHref} target="_blank" rel="noreferrer" className="cta-button cta-primary cta-full">
+            <a href={whatsappDemoHref} target="_blank" rel="noreferrer" className="cta-button cta-primary cta-full">
               Falar no WhatsApp
             </a>
           </div>

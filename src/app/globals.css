@@ -79,6 +79,26 @@ a {
   box-shadow: var(--shadow-dark);
 }
 
+.trust-strip {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.trust-chip {
+  border-radius: 22px;
+  border: 1px solid rgba(243, 179, 25, 0.12);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.03));
+  padding: 18px 20px;
+  color: #f4dfb1;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  box-shadow: var(--shadow-dark);
+}
+
 .hero-card {
   position: relative;
   overflow: hidden;
@@ -241,7 +261,7 @@ a {
 .hero-image-grid-mobile {
   display: none;
   gap: 12px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   width: 100%;
   align-items: start;
 }
@@ -765,7 +785,8 @@ a {
   .faq-grid,
   .pricing-grid,
   .timeline-grid,
-  .showcase-grid {
+  .showcase-grid,
+  .trust-strip {
     grid-template-columns: 1fr;
   }
 
