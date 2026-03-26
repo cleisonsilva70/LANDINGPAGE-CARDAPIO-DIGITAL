@@ -372,7 +372,21 @@ a {
 .proof-header {
   display: grid;
   gap: 18px;
-  grid-template-columns: 1.02fr 0.98fr;
+  grid-template-columns: 1fr;
+}
+
+.proof-copy {
+  display: grid;
+  gap: 18px;
+}
+
+.proof-title {
+  max-width: 980px;
+  margin: 0;
+}
+
+.proof-copy-text {
+  max-width: 760px;
 }
 
 .showcase-grid {
@@ -479,6 +493,10 @@ a {
 .post-solution-copy-inner {
   display: grid;
   gap: 18px;
+}
+
+.post-solution-title {
+  margin: 0;
 }
 
 .post-solution-visual {

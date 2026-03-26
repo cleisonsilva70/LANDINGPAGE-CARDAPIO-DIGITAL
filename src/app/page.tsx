@@ -193,17 +193,17 @@ export default function Home() {
       <section className="container-shell section-spacing">
         <div className="proof-shell">
           <div className="proof-header">
-            <div>
+            <div className="proof-copy">
               <p className="section-tag">Prova visual do sistema</p>
-              <h2 className="section-title">
+              <h2 className="section-title proof-title">
                 mostre uma vitrine profissional que ajuda sua hamburgueria a vender mais
               </h2>
+              <p className="section-copy proof-copy-text">
+                Quando o cliente bate o olho em um cardapio bonito, claro e facil de
+                pedir, a chance de fechar o pedido aumenta e sua marca passa muito mais
+                confianca.
+              </p>
             </div>
-            <p className="section-copy">
-              Quando o cliente bate o olho em um cardapio bonito, claro e facil de
-              pedir, a chance de fechar o pedido aumenta e sua marca passa muito mais
-              confianca.
-            </p>
           </div>
 
           <div className="showcase-grid">
@@ -233,7 +233,9 @@ export default function Home() {
           <article className="feature-panel post-solution-copy">
             <div className="post-solution-copy-inner">
               <span className="panel-tag">Depois da solucao</span>
-              <h3>sua operacao fica mais organizada, mais profissional e muito mais facil de vender</h3>
+              <h3 className="section-title post-solution-title">
+                sua operacao fica mais organizada, mais profissional e muito mais facil de vender
+              </h3>
               <p>
                 Depois da implantacao, o cliente entende melhor o cardapio, o atendimento
                 ganha mais clareza para trabalhar e a equipe para de perder tempo com
