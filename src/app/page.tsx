@@ -96,7 +96,7 @@ export default function Home() {
         <div className="container-shell">
           <div className="hero-card">
             <div className="hero-copy">
-              <span className="eyebrow-pill">Cardapio digital para hamburguerias</span>
+              <span className="eyebrow-pill">Cardapio digital</span>
               <h1 className="hero-title">
                 receba pedidos com mais organizacao e passe uma imagem mais profissional
               </h1>
@@ -376,3 +376,4 @@ export default function Home() {
     </main>
   );
 }
+
