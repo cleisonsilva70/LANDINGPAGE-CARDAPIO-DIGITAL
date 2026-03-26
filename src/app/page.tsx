@@ -30,7 +30,7 @@ export default function Home() {
       highlight: "Boa apresentacao ajuda o cliente a pedir com mais confianca.",
       theme: "showcase-card showcase-card-light",
       desktopImage: "/screenshots/cardapio.png",
-      mobileImage: "/screenshots/cardapio.png",
+      mobileImage: "/screenshots/cardapio%20mobile.jpeg",
     },
     {
       tag: "Checkout",
@@ -39,7 +39,7 @@ export default function Home() {
       highlight: "Quanto mais simples o fechamento, maior a chance de converter.",
       theme: "showcase-card showcase-card-cream",
       desktopImage: "/screenshots/checkout.png",
-      mobileImage: "/screenshots/checkout.png",
+      mobileImage: "/screenshots/checkout%20mobile.jpeg",
     },
     {
       tag: "Atendimento",
@@ -48,7 +48,7 @@ export default function Home() {
       highlight: "Voce para de misturar pedido novo, pagamento e preparo.",
       theme: "showcase-card showcase-card-light",
       desktopImage: "/screenshots/atendimento.png",
-      mobileImage: "/screenshots/atendimento.png",
+      mobileImage: "/screenshots/atendimento%20mobile%201.jpeg",
     },
     {
       tag: "Cozinha",
@@ -57,7 +57,7 @@ export default function Home() {
       highlight: "A equipe trabalha melhor quando o fluxo esta limpo e visual.",
       theme: "showcase-card showcase-card-dark",
       desktopImage: "/screenshots/cozinha.png",
-      mobileImage: "/screenshots/cozinha.png",
+      mobileImage: "/screenshots/cozinha%20mobile%201.jpeg",
     },
   ];
 
