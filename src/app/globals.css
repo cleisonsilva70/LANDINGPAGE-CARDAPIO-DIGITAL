@@ -316,7 +316,8 @@ a {
 }
 
 .problem-image-shell {
-  max-width: 420px;
+  width: 100%;
+  max-width: 520px;
   border-radius: 28px;
   border: 1px solid rgba(243, 179, 25, 0.14);
   background: rgba(255, 255, 255, 0.03);
@@ -508,7 +509,8 @@ a {
 }
 
 .post-solution-image-shell {
-  max-width: 420px;
+  width: 100%;
+  max-width: 520px;
   border-radius: 28px;
   border: 1px solid rgba(243, 179, 25, 0.14);
   background: rgba(255, 255, 255, 0.03);
