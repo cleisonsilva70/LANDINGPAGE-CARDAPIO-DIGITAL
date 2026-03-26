@@ -90,6 +90,12 @@ export default function Home() {
     "pedido mais organizado do cliente ate a cozinha",
   ];
 
+  const idealForItems = [
+    "hamburguerias que querem vender mais pelo celular",
+    "lanchonetes com atendimento no WhatsApp",
+    "restaurantes delivery que querem mais organizacao na operacao",
+  ];
+
   const proofItems = [
     "feito para hamburguerias, lanchonetes e restaurantes delivery",
     "implantacao com visual da sua marca e link pronto para divulgar",
@@ -212,6 +218,29 @@ export default function Home() {
                 className="problem-image"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container-shell section-spacing">
+        <div className="ideal-shell">
+          <div className="ideal-copy">
+            <p className="section-tag">Ideal para</p>
+            <h2 className="section-title">
+              feito para negocios que querem vender mais sem baguncar a rotina
+            </h2>
+            <p className="section-copy">
+              Se hoje o pedido chega solto no WhatsApp, o cliente demora para fechar
+              a compra ou a equipe se enrola entre atendimento e cozinha, esse tipo
+              de sistema faz muito sentido para a sua operacao.
+            </p>
+          </div>
+          <div className="ideal-grid">
+            {idealForItems.map((item) => (
+              <div key={item} className="ideal-card">
+                {item}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -355,6 +384,9 @@ export default function Home() {
                 <li>Configuracao do WhatsApp</li>
                 <li>Entrega pronta para uso</li>
               </ul>
+              <div className="pricing-note">
+                implantacao em poucos dias, pronta para divulgar e comecar a vender
+              </div>
             </article>
 
             <article className="pricing-card pricing-card-dark">
@@ -371,6 +403,9 @@ export default function Home() {
                 <li>Pequenos ajustes</li>
                 <li>Atendimento e cozinha ativos</li>
               </ul>
+              <div className="pricing-note pricing-note-dark">
+                mensalidade simples para manter o sistema no ar e a operacao rodando
+              </div>
             </article>
           </div>
 
@@ -411,7 +446,7 @@ export default function Home() {
           <div>
             <p className="section-tag">Fechamento</p>
             <h2 className="section-title">
-              quer deixar seu delivery mais profissional e vender com mais organizacao?
+              quer colocar isso na sua marca e comecar a vender com mais organizacao?
             </h2>
             <p className="section-copy">
               Se voce quer um cardapio digital bonito, facil de pedir e com operacao
@@ -420,13 +455,13 @@ export default function Home() {
             </p>
           </div>
           <div className="closing-card">
-            <strong>fale agora e veja como fica na sua marca</strong>
+            <strong>fale agora e veja como isso fica no seu delivery</strong>
             <p>
               Chame no WhatsApp para receber a demonstracao, tirar duvidas e entender
               como fica a implantacao para a sua hamburgueria ou restaurante.
             </p>
-            <a href={whatsappDemoHref} target="_blank" rel="noreferrer" className="cta-button cta-primary cta-full">
-              Falar no WhatsApp
+            <a href={whatsappContractHref} target="_blank" rel="noreferrer" className="cta-button cta-primary cta-full">
+              Quero ver na minha marca
             </a>
           </div>
         </div>
