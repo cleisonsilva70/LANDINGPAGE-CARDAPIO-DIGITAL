@@ -497,7 +497,7 @@ a {
 
 .post-solution-title {
   margin: 0;
-  font-size: clamp(2rem, 4vw, 3.9rem);
+  font-size: clamp(2rem, 4.1vw, 4.2rem);
   line-height: 0.95;
   max-width: 980px;
 }
