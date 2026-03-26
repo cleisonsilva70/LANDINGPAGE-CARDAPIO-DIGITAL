@@ -29,7 +29,8 @@ export default function Home() {
       text: "Categorias bem organizadas, produtos em destaque e carrinho simples para o cliente pedir sem dificuldade.",
       highlight: "Boa apresentacao ajuda o cliente a pedir com mais confianca.",
       theme: "showcase-card showcase-card-light",
-      image: "/screenshots/cardapio.png",
+      desktopImage: "/screenshots/cardapio.png",
+      mobileImage: "/screenshots/cardapio.png",
     },
     {
       tag: "Checkout",
@@ -37,7 +38,8 @@ export default function Home() {
       text: "Entrega, pagamento e resumo aparecem de forma clara para o cliente concluir sem travar no meio do caminho.",
       highlight: "Quanto mais simples o fechamento, maior a chance de converter.",
       theme: "showcase-card showcase-card-cream",
-      image: "/screenshots/checkout.png",
+      desktopImage: "/screenshots/checkout.png",
+      mobileImage: "/screenshots/checkout.png",
     },
     {
       tag: "Atendimento",
@@ -45,7 +47,8 @@ export default function Home() {
       text: "Os pedidos entram organizados, com filtros e confirmacao antes de seguir para a cozinha.",
       highlight: "Voce para de misturar pedido novo, pagamento e preparo.",
       theme: "showcase-card showcase-card-light",
-      image: "/screenshots/atendimento.png",
+      desktopImage: "/screenshots/atendimento.png",
+      mobileImage: "/screenshots/atendimento.png",
     },
     {
       tag: "Cozinha",
@@ -53,7 +56,8 @@ export default function Home() {
       text: "A cozinha enxerga apenas os pedidos liberados, separados por status e prioridade.",
       highlight: "A equipe trabalha melhor quando o fluxo esta limpo e visual.",
       theme: "showcase-card showcase-card-dark",
-      image: "/screenshots/cozinha.png",
+      desktopImage: "/screenshots/cozinha.png",
+      mobileImage: "/screenshots/cozinha.png",
     },
   ];
 
@@ -235,14 +239,27 @@ export default function Home() {
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
                 <strong className="showcase-highlight">{item.highlight}</strong>
-                <div className="showcase-screen">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={1200}
-                    height={900}
-                    className="showcase-image"
-                  />
+                <div className="showcase-screen-pair">
+                  <div className="showcase-screen showcase-screen-desktop">
+                    <span className="showcase-device-label">Desktop</span>
+                    <Image
+                      src={item.desktopImage}
+                      alt={`${item.title} no desktop`}
+                      width={1200}
+                      height={900}
+                      className="showcase-image"
+                    />
+                  </div>
+                  <div className="showcase-screen showcase-screen-mobile">
+                    <span className="showcase-device-label">Mobile</span>
+                    <Image
+                      src={item.mobileImage}
+                      alt={`${item.title} no mobile`}
+                      width={900}
+                      height={1600}
+                      className="showcase-image"
+                    />
+                  </div>
                 </div>
               </article>
             ))}
