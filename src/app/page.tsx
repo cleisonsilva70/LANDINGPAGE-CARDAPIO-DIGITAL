@@ -373,10 +373,14 @@ export default function Home() {
           <div className="faq-intro">
             <p className="section-tag">FAQ</p>
             <h2 className="section-title">duvidas que seu cliente pode ter antes de fechar</h2>
+            <p className="section-copy faq-intro-copy">
+              Respostas curtas para as perguntas que mais travam a decisao de compra.
+            </p>
           </div>
           <div className="faq-grid">
-            {faqs.map((faq) => (
-              <article key={faq.question} className="faq-card">
+            {faqs.map((faq, index) => (
+              <article key={faq.question} className="faq-card faq-card-clean">
+                <span className="faq-index">0{index + 1}</span>
                 <h3>{faq.question}</h3>
                 <p>{faq.answer}</p>
               </article>
