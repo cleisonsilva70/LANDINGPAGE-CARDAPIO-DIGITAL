@@ -190,10 +190,21 @@ export default function Home() {
               muita hamburgueria ainda perde tempo e pedido na desorganizacao
             </h2>
           </div>
-          <p className="section-copy">
-            Quando o pedido chega confuso, o atendimento se enrola, a cozinha recebe
-            informacao errada e o cliente percebe na hora que a operacao nao esta redonda.
-          </p>
+          <div className="problem-side">
+            <p className="section-copy">
+              Quando o pedido chega confuso, o atendimento se enrola, a cozinha recebe
+              informacao errada e o cliente percebe na hora que a operacao nao esta redonda.
+            </p>
+            <div className="problem-image-shell">
+              <Image
+                src="/screenshots/atendente.png"
+                alt="Atendente organizando pedidos"
+                width={1200}
+                height={900}
+                className="problem-image"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

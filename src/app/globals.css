@@ -303,6 +303,28 @@ a {
   grid-template-columns: 1.1fr 0.9fr;
 }
 
+.problem-side {
+  display: grid;
+  gap: 18px;
+  align-content: start;
+}
+
+.problem-image-shell {
+  max-width: 420px;
+  border-radius: 28px;
+  border: 1px solid rgba(243, 179, 25, 0.14);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 10px;
+  box-shadow: var(--shadow-dark);
+}
+
+.problem-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
 .section-title {
   margin: 18px 0 0;
   font-size: clamp(2rem, 4vw, 3.9rem);
@@ -673,6 +695,10 @@ a {
 
   .hero-carousel-desktop {
     width: min(100%, 430px);
+  }
+
+  .problem-image-shell {
+    max-width: 100%;
   }
 }
 
