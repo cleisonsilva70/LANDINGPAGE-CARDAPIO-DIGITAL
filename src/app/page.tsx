@@ -426,11 +426,8 @@ export default function Home() {
           <div className="faq-intro">
             <p className="section-tag">FAQ</p>
             <h2 className="section-title">
-              o que o dono do fast-food geralmente quer entender antes de colocar o sistema para rodar
+              as duvidas mais comuns de quem quer organizar melhor o fast-food e vender com mais clareza
             </h2>
-            <p className="section-copy faq-intro-copy">
-              Respostas curtas para as perguntas que mais travam a decisao de compra.
-            </p>
           </div>
           <div className="faq-grid">
             {faqs.map((faq, index) => (
