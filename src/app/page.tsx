@@ -361,20 +361,20 @@ export default function Home() {
           <div className="pricing-intro">
             <p className="section-tag">Oferta comercial</p>
             <h2 className="section-title">
-              um valor acessivel para profissionalizar seu delivery e vender com mais organizacao
+              uma proposta pensada para profissionalizar seu delivery sem complicar a operacao
             </h2>
             <p className="section-copy">
               Em vez de depender de pedido baguncado no WhatsApp e passar uma imagem
-              amadora para o cliente, voce investe uma vez para implantar e depois
-              mantem seu sistema rodando por uma mensalidade leve para o dia a dia.
+              amadora para o cliente, voce implanta uma estrutura mais profissional e
+              mantem seu sistema rodando no dia a dia com suporte e acompanhamento.
             </p>
           </div>
 
           <div className="pricing-grid">
             <article className="pricing-card pricing-card-light">
               <span className="panel-tag">Implantacao</span>
-              <h3>R$ 200</h3>
-              <div className="price-chip">valor de entrada</div>
+              <h3>sob medida</h3>
+              <div className="price-chip">entrega personalizada</div>
               <p>
                 Voce paga uma vez para receber seu cardapio digital pronto, com a cara
                 da sua marca, organizado para vender melhor e ja preparado para divulgar.
@@ -392,8 +392,8 @@ export default function Home() {
 
             <article className="pricing-card pricing-card-dark">
               <span className="panel-tag panel-tag-yellow">Mensalidade</span>
-              <h3>R$ 59,90</h3>
-              <div className="price-chip price-chip-dark">recorrencia mensal</div>
+              <h3>leve no mes</h3>
+              <div className="price-chip price-chip-dark">continuidade da operacao</div>
               <p>
                 Por um valor baixo no mes, voce mantem o sistema online, com atendimento,
                 cozinha e estrutura funcionando para continuar vendendo sem depender de gambiarra.
@@ -411,11 +411,11 @@ export default function Home() {
           </div>
 
           <div className="pricing-actions">
-            <a href={whatsappContractHref} target="_blank" rel="noreferrer" className="cta-button cta-primary">
-              Quero contratar
+            <a href={whatsappDemoHref} target="_blank" rel="noreferrer" className="cta-button cta-primary">
+              Quero entender como funciona
             </a>
             <a href={whatsappQuestionsHref} target="_blank" rel="noreferrer" className="cta-button cta-outline">
-              Tirar duvidas no WhatsApp
+              Falar no WhatsApp
             </a>
           </div>
         </div>
