@@ -9,7 +9,7 @@ export default function Home() {
     "Oi! Quero contratar o cardapio digital para minha hamburgueria.",
   );
   const whatsappQuestionsMessage = encodeURIComponent(
-    "Oi! Tenho algumas duvidas sobre a implantacao e a mensalidade do cardapio digital.",
+    "Oi! Tenho algumas duvidas sobre como funciona o cardapio digital.",
   );
   const whatsappDemoHref = `https://wa.me/${salesWhatsapp}?text=${whatsappDemoMessage}`;
   const whatsappContractHref = `https://wa.me/${salesWhatsapp}?text=${whatsappContractMessage}`;
@@ -75,17 +75,17 @@ export default function Home() {
     {
       question: "Posso usar com a minha marca?",
       answer:
-        "Sim. A implantacao inclui nome, logo, banners, categorias, produtos e visual adaptado para a identidade da sua hamburgueria ou restaurante.",
+        "Sim. O sistema pode ser adaptado com nome, logo, banners, categorias, produtos e visual mais alinhado com a identidade da sua hamburgueria ou restaurante.",
     },
     {
-      question: "Quanto custa para comecar?",
+      question: "Como funciona para contratar?",
       answer:
-        "A implantacao custa R$ 200 e a mensalidade do sistema e R$ 59,90.",
+        "Voce fala comigo no WhatsApp, entende como fica para a sua operacao e eu te explico os detalhes para colocar o sistema no seu negocio.",
     },
   ];
 
   const trustPoints = [
-    "implantacao rapida para comecar a vender sem enrolacao",
+    "entrada rapida para comecar a vender sem enrolacao",
     "visual com a identidade da sua hamburgueria ou restaurante",
     "pedido mais organizado do cliente ate a cozinha",
   ];
@@ -98,7 +98,7 @@ export default function Home() {
 
   const proofItems = [
     "feito para hamburguerias, lanchonetes e restaurantes delivery",
-    "implantacao com visual da sua marca e link pronto para divulgar",
+    "estrutura com visual da sua marca e link pronto para divulgar",
     "atendimento e cozinha organizados para evitar confusao no pedido",
   ];
 
@@ -305,7 +305,7 @@ export default function Home() {
                 sua operacao fica mais organizada, mais profissional e muito mais facil de vender
               </h3>
               <p>
-                Depois da implantacao, o cliente entende melhor o cardapio, o atendimento
+                Depois que o sistema entra na sua rotina, o cliente entende melhor o cardapio, o atendimento
                 ganha mais clareza para trabalhar e a equipe para de perder tempo com
                 pedido confuso no WhatsApp.
               </p>
@@ -319,7 +319,7 @@ export default function Home() {
             <div className="post-solution-image-shell">
               <Image
                 src="/screenshots/atendenteorganizacao.png"
-                alt="Atendimento mais organizado depois da implantacao"
+                alt="Atendimento mais organizado depois da organizacao do sistema"
                 width={1200}
                 height={900}
                 className="problem-image"
@@ -376,8 +376,8 @@ export default function Home() {
               <h3>sob medida</h3>
               <div className="price-chip">entrega personalizada</div>
               <p>
-                Voce paga uma vez para receber seu cardapio digital pronto, com a cara
-                da sua marca, organizado para vender melhor e ja preparado para divulgar.
+                Seu cardapio digital fica pronto com a cara da sua marca, organizado
+                para vender melhor e ja preparado para divulgar.
               </p>
               <ul>
                 <li>visual personalizado com a sua marca</li>
@@ -386,7 +386,7 @@ export default function Home() {
                 <li>entrega pronta para comecar a usar</li>
               </ul>
               <div className="pricing-note">
-                um investimento unico para sair da improvisacao e entrar com mais profissionalismo
+                uma forma pratica de sair da improvisacao e entrar com mais profissionalismo
               </div>
             </article>
 
@@ -395,8 +395,8 @@ export default function Home() {
               <h3>leve no mes</h3>
               <div className="price-chip price-chip-dark">continuidade da operacao</div>
               <p>
-                Por um valor baixo no mes, voce mantem o sistema online, com atendimento,
-                cozinha e estrutura funcionando para continuar vendendo sem depender de gambiarra.
+                Voce mantem o sistema online, com atendimento, cozinha e estrutura
+                funcionando para continuar vendendo sem depender de gambiarra.
               </p>
               <ul>
                 <li>hospedagem do sistema</li>
@@ -405,7 +405,7 @@ export default function Home() {
                 <li>atendimento e cozinha ativos</li>
               </ul>
               <div className="pricing-note pricing-note-dark">
-                menos que o valor de um lanche por dia para manter sua operacao mais organizada
+                continuidade simples para manter sua operacao mais organizada
               </div>
             </article>
           </div>
@@ -458,7 +458,7 @@ export default function Home() {
           <div className="closing-card">
             <strong>chame agora e veja como isso pode ficar na sua hamburgueria</strong>
             <p>
-              Fale no WhatsApp para ver a demonstracao, entender a implantacao e descobrir
+              Fale no WhatsApp para ver a demonstracao, entender como funciona e descobrir
               como deixar seu atendimento, sua cozinha e sua vitrine mais profissionais.
             </p>
             <a href={whatsappContractHref} target="_blank" rel="noreferrer" className="cta-button cta-primary cta-full">
