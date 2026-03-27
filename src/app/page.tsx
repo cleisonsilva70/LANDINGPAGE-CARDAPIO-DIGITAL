@@ -425,7 +425,9 @@ export default function Home() {
         <div className="faq-shell">
           <div className="faq-intro">
             <p className="section-tag">FAQ</p>
-            <h2 className="section-title">duvidas que seu cliente pode ter antes de fechar</h2>
+            <h2 className="section-title">
+              o que o dono do fast-food geralmente quer entender antes de colocar o sistema para rodar
+            </h2>
             <p className="section-copy faq-intro-copy">
               Respostas curtas para as perguntas que mais travam a decisao de compra.
             </p>
